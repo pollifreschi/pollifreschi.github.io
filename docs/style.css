@@ -110,10 +110,10 @@ body[theme='dark'] nav {
 body[theme='dark'] nav button img.mono {
 	filter: invert(1);
 }
-body[theme='light'] #theme>figure {
+body[theme='light'] #theme img {
 	content: url('resources/theme/light.svg');
 }
-body[theme='dark'] #theme>figure {
+body[theme='dark'] #theme img {
 	content: url('resources/theme/dark.svg');
 }
 body[theme='light'] footer {
