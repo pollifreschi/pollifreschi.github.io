@@ -101,6 +101,9 @@ body[theme='light'] a {
 body[theme='dark'] a {
 	color: yellow;
 }
+body[theme='dark'] img.mono {
+	filter: invert(1);
+}
 body[theme='light'] nav {
 	border-bottom: 1px solid black;
 }
