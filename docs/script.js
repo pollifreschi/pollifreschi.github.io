@@ -21,12 +21,9 @@ function switchTheme() {
 	theme('light');
 }
 function theme(value) {
-	if (value === 'light') {
-		document.body.setAttribute('theme', 'light');
-		return;
-	}
-	if (value === 'dark') {
-		document.body.setAttribute('theme', 'dark');
+	if (value === 'light' || value === 'dark') {
+		document.body.setAttribute('theme', value);
+		document.getElementById('theme-icon').setAttribute('src', location.origin + '/icons/theme/' + value + '.svg');
 		return;
 	}
 }
