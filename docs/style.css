@@ -110,6 +110,12 @@ body[theme='dark'] nav {
 body[theme='dark'] nav button img.mono {
 	filter: invert(1);
 }
+body[theme='light'] #theme>figure {
+	content: '<img title="Tema" src="resources/theme/light.svg" width="28" height="28">';
+}
+body[theme='dark'] #theme>figure {
+	content: '<img title="Tema" src="resources/theme/dark.svg" width="28" height="28">';
+}
 body[theme='light'] footer {
 	border-top: 1px solid black;
 }
