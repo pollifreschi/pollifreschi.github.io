@@ -63,6 +63,12 @@ nav>button>figure {
 nav>button>figure>figcaption {
 	font-variant: small-caps;
 }
+nav>button.icon {
+	width: 2.5rem;
+}
+nav>button.icon figcaption {
+	display: none;
+}
 main {
 	display: flex;
 	flex-direction: column;
