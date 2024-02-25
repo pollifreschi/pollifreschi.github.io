@@ -5,6 +5,9 @@ const urlParams = new URLSearchParams(new URL(document.referrer || location).sea
 if (urlParams.has('theme'))
 	theme(urlParams.get('theme'));
 document.getElementById('theme').onclick = switchTheme;
+document.getElementById('homepage-button').onclick = () => {
+	navigate(location.origin);
+}
 function navigate(url) {
 	url += '?theme=' + (document.body.getAttribute('theme') || 'light');
 	location = url;
@@ -22,7 +25,7 @@ function switchTheme() {
 }
 function theme(value) {
 	if (value === 'light' || value === 'dark') {
-		document.body.setAttribute('theme', value);
+		document.body.setAttribute('theme-button', value);
 		document.getElementById('theme-icon').setAttribute('src', location.origin + '/icons/theme/' + value + '.svg');
 		return;
 	}
