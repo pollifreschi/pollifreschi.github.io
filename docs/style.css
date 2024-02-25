@@ -45,6 +45,16 @@ nav {
 	display: flex;
 	align-items: center;
 }
+nav>button {
+	background: none;
+	border: none;
+	width: 8em;
+	height: 54px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
 @media print {
 	body {
 		background: white;
