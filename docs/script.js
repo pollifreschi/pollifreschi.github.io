@@ -26,7 +26,7 @@ function switchTheme() {
 function theme(value) {
 	if (value === 'light' || value === 'dark') {
 		document.body.setAttribute('theme', value);
-		document.getElementById('theme-icon').setAttribute('src', location.origin + '/icons/theme/' + value + '.svg');
+		document.getElementById('theme-icon').setAttribute('src', location.origin + '/resources/theme/' + value + '.svg');
 		return;
 	}
 }
