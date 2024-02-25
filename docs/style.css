@@ -1,0 +1,28 @@
+html {
+	font-size: 16px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+head, title, link, meta, style, script, preload {
+	display: none;
+}
+body {
+	margin: 0;
+	padding: 5px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	overflow: hidden;
+}
+@media print {
+	body {
+		background: white;
+		color: black;
+	}
+	nav {
+		display: none;
+	}
+}
