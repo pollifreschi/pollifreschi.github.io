@@ -4,7 +4,7 @@ if (location.toString() !== location.origin + '/') {
 const urlParams = new URLSearchParams(new URL(document.referrer || location).search);
 if (urlParams.has('theme'))
 	theme(urlParams.get('theme'));
-document.getElementById('theme').onclick = switchTheme;
+document.getElementById('theme-button').onclick = switchTheme;
 document.getElementById('homepage-button').onclick = () => {
 	navigate(location.origin);
 }
