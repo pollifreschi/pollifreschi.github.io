@@ -30,6 +30,12 @@ button {
 	margin: 0;
 	padding: 5px;
 }
+button.icon {
+	width: 2.5rem;
+}
+button.icon figcaption {
+	display: none;
+}
 figure {
 	margin: 0;
 	padding: 0;
