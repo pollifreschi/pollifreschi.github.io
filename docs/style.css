@@ -7,6 +7,14 @@ html {
 head, title, link, meta, style, script, preload {
 	display: none;
 }
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
 body {
 	margin: 0;
 	padding: 5px;
@@ -16,6 +24,26 @@ body {
 	justify-content: space-between;
 	align-items: stretch;
 	overflow: hidden;
+}
+button {
+	color: inherit;
+	margin: 0;
+	padding: 5px;
+}
+figure {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: inherit !important;
+	cursor: inherit;
+	text-decoration: inherit;
+}
+nav {
+	margin: 0;
+	padding: 5px;
+	display: flex;
+	align-items: center;
 }
 @media print {
 	body {
