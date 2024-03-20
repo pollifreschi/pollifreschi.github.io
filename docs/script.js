@@ -1,4 +1,3 @@
-window.Telegram.WebApp.enableClosingConfirmation()
 if (location.toString() !== location.origin + '/') {
 	location.replace(location.origin + '/');
 }
